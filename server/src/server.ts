@@ -1,12 +1,9 @@
-import express, { response } from 'express'
+import express from 'express';
 
-const app = express()
+const app = express();
 
-app.get('/', (req, res) => {
-  return res.json({ message: 'run'})
-})
+app.get('/', (req, res) => res.json({ message: 'run' }));
 
 app.listen(3030, () => {
-  console.log('##### Server started #####')
-})
-
+  console.log('##### Server started #####');
+});
