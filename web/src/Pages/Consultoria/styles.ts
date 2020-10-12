@@ -29,13 +29,21 @@ export const Categorias = styled.div`
     font-weight: 300;
     font-size: 14px;
 
+    transition: .2s;
+    cursor: pointer;
+
     div {
       margin-bottom: .5rem;
     }
   }
+
+  .card:hover {
+    border: 1px solid rgba(254, 0, 0, 0.7);
+  }
 `;
 
 export const Recomendacao = styled.div`
+
   .title {
     margin-top: 2rem;
     font-size: 24px;
@@ -87,7 +95,31 @@ export const Recomendacao = styled.div`
         background: none;
         font-size: 16px;
         color: #FE0000;
+        transition: .2s;
+      }
+
+      button:hover {
+        background-color: #FED8D8;
       }
     }
+  }
+
+  .vermais {
+    ::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        background: #DFE0EB;
+        left: 30%;
+        right: 10%;
+        margin: -30px auto;
+        
+      }
+
+    margin-top: 50px;
+    color: #9FA2B4;
+    display: grid;
+    place-items: center;
+    cursor: pointer
   }
 `;
