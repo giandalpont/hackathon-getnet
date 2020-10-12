@@ -97,7 +97,8 @@ export const Chart = styled.div`
     padding: 1rem;
 
     img {
-      width: 80%;
+      width: 100%;
+      height: 75%;
     }
   }
 
