@@ -60,28 +60,38 @@ const Overview: React.FC = () => {
 
 				<div className="data">
 					<div className="item">
-						<h3>Crédito</h3>
-						<h1>R$ 449,98</h1>
+						<span>
+							<h3>Crédito</h3>
+							<h1>R$ 449,98</h1>
+						</span>
 					</div>
 
 					<div className="item">
-						<h3>Débito</h3>
-						<h1>R$ 426,99</h1>
+						<span>
+							<h3>Débito</h3>
+							<h1>R$ 426,99</h1>
+						</span>
 					</div>
 
 					<div className="item">
-						<h3>GetPay</h3>
-						<h1>R$ 3390,00</h1>
+						<span>
+							<h3>GetPay</h3>
+							<h1>R$ 3390,00</h1>
+						</span>
 					</div>
 
 					<div className="item">
-						<h3>Pontos</h3>
-						<h1>94</h1>
+						<span>
+							<h3>Pontos</h3>
+							<h1>94</h1>
+						</span>
 					</div>
 
 					<div className="item">
-						<h3>Referência</h3>
-						<h1>31%</h1>
+						<span>
+							<h3>Referência</h3>
+							<h1>31%</h1>
+						</span>
 					</div>
 				</div>
 			</Chart>
