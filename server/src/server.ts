@@ -5,6 +5,6 @@ const app = express();
 
 app.use(routes);
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3030, () => {
   console.log('##### Server started #####');
 });
