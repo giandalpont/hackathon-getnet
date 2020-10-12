@@ -7,10 +7,20 @@ export const TopMenu = styled.div`
 
   height: 3rem;
   margin-bottom: 2rem;
-  /* outline: 1px solid; */
+  
   
 
   color: #252733;
+
+  .title {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .items {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
 `;
 
 export const Container = styled.div`
@@ -39,15 +49,15 @@ export const Cards = styled.div`
   align-items: center;
   gap: 2rem;
 
-  font-weight: 700;
-
   h1 {
-    font-size: 40px;
+    font-size: 2rem;
     margin: .3rem;
+    font-weight: 700;
   }
 
   h3 {
-    font-size: 19px;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .card {
@@ -85,23 +95,31 @@ export const Chart = styled.div`
   .chart {
     flex: 2.5;
     padding: 1rem;
+
+    img {
+      width: 100%;
+      height: 75%;
+    }
   }
 
   .data {
     flex: 1;
 
     h1 {
-      font-size: 24px;
-    }
+    font-size: 1.4em;
+    margin: .3rem;
+    font-weight: 700;
+  }
 
-    h3 {
-      font-size: 18px;
-    }
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 
     .item {
       border-left: 1px solid #DFE0EB;
       border-bottom: 1px solid #DFE0EB;
-      /* padding: 1rem; */
+      padding: .8rem;  
       text-align: center
     }
   }
