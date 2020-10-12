@@ -15,6 +15,7 @@ import iconTrilha from '../../assets/icons/trilha.svg'
 
 import Overview from '../../Components/Overview'
 import Trilha from '../Trilha'
+import Consultoria from '../Consultoria'
 
 const Dashboard: React.FC = () => {
   const [menuMob, setMenuMob] = useState(false);
