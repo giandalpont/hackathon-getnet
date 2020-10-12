@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
     <Container>
       <Menu menu1="active" />
       <Content>
-        <Overview />
+        <Consultoria />
       </Content>
     </Container>
   )

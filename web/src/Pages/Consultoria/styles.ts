@@ -8,14 +8,15 @@ export const Categorias = styled.div`
   
   .categorias {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 1.8rem;
+    justify-content: space-around;
+    gap: 5px;
     margin-top: 1rem;
   }
 
   .card {
-    flex: 1 1 150px;
+    flex: 0 0 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,12 +57,13 @@ export const Recomendacao = styled.div`
   
   .sugestoes {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 5px;
 
     .card {
-      flex: 1;
+      flex: 0 1 250px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -71,6 +73,10 @@ export const Recomendacao = styled.div`
       border: 1px solid #DFE0EB;
       border-radius: 10px;
       text-align: center;
+
+      img {
+        width: 85%;
+      }
 
       h1 {
         font-size: 19px;
