@@ -39,7 +39,7 @@ const Dashboard: React.FC = () => {
 
         </ul>
       </Menu>
-      <Content>
+      <Content>asdfasdfasd
 
       </Content>
     </Container>
