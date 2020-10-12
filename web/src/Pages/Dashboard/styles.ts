@@ -8,6 +8,7 @@ interface MenuProps {
 
 export const Container = styled.div`
   display: flex;
+  justify-content: space-between;
 `
 export const Menu = styled.div`
   overflow: auto;

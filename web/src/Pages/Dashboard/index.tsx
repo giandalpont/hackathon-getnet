@@ -13,6 +13,8 @@ import iconConfiguracao from '../../assets/icons/configuracao.svg'
 import iconServicos from '../../assets/icons/servicos.svg'
 import iconTrilha from '../../assets/icons/trilha.svg'
 
+import Overview from '../../Components/Overview'
+
 const Dashboard: React.FC = () => {
   const [menuMob, setMenuMob] = useState(false);
   return (
@@ -39,8 +41,8 @@ const Dashboard: React.FC = () => {
 
         </ul>
       </Menu>
-      <Content>asdfasdfasd
-
+      <Content>
+        <Overview />
       </Content>
     </Container>
   )
