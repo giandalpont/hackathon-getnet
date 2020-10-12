@@ -1,7 +1,85 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.div`
   width: 100%;
+`
+export const Text = styled.div`
+  color: #40424C;
+
+  @media screen and (min-width: 1450px) {
+    width: 70%;
+  }
+
+  h2 {
+    margin-top: 25px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    color: #40424C;
+  }
+  h3 {
+    margin-top: 20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+  }
+  h4 {
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 20px;
+
+    a{
+      text-decoration: none;
+      color: #40424C;
+    }
+  }
+  ul {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1450px) {
+    width: 70%;
+  }
+
+`
+export const Volta = styled.div`
+  display: flex;
+  justify-content: space-evenly;;
+
+  a {
+    text-decoration: none;
+    color: #FE0000;
+    display: block;
+  }
+
+  div {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    border: 1px solid #FE0000;
+    padding: 10px 20px;
+    width: 220px;
+    border-radius: 30px;
+    display: block;
+
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: #FED8D8;
+      border-color: #FED8D8;
+      a {
+        color: #FE0000;
+      }
+    }
+  }
 `
 
 export const BoxTrilha = styled.div`
@@ -21,6 +99,11 @@ export const BoxTrilha = styled.div`
     line-height: 24px;
     letter-spacing: 0.4px;
   }
+
+  a {
+    text-decoration: none;
+  }
+
   .btn {
     cursor: pointer;
     font-size: 16px;
@@ -81,16 +164,16 @@ export const BoxTrilha = styled.div`
       }
       .line {
         background: #FE0000;
-          border: 2px solid red;
-          width: 332px;
-          margin-top: 40px;
-          position: absolute;
-          z-index: 0;
-          margin-left: 381px;
-          @media screen and (max-width: 1450px) {
-            width: 256px;
-            margin-left: 321px;
-          }
+        border: 2px solid red;
+        width: 332px;
+        margin-top: 40px;
+        position: absolute;
+        z-index: 0;
+        margin-left: 381px;
+        @media screen and (max-width: 1450px) {
+          width: 256px;
+          margin-left: 321px;
+        }
       }
       .cicle {
         background: #FE0000;

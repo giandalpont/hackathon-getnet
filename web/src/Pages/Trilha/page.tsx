@@ -3,6 +3,7 @@ import { Container, BoxTrilha } from './styles';
 
 import iconInvestimento from '../../assets/icons/investimento.svg'
 import TopMenu from '../../Components/TopMenu';
+import { Link } from 'react-router-dom';
 
 const Page: React.FC = () => {
   return (
@@ -43,8 +44,9 @@ const Page: React.FC = () => {
             50 pontos
           </div>
         </div>
-
-        <span className="btn">COMEÇAR </span>
+        <Link to="/trilha-de-conhecimento/nocao-de-educacao-financeira" >
+          <span className="btn">COMEÇAR </span>
+        </Link>
       </BoxTrilha>
       <BoxTrilha>
         <h2>Noção de Educação Financeira</h2>
