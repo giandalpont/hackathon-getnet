@@ -152,11 +152,11 @@ const Consultoria: React.FC = () => {
         <div className="sugestoes">
           <div className="card">
             <span>
-              <div className="categoria">Vendas</div>
+              <h1>Vendas</h1>
               <div className="pic">
                 <img src={recImg1} alt=""/>
               </div>
-              <div className="nome"></div>
+              <div className="nome">Fernanda Moreira</div>
               <div className="cargo">CEO na xxx</div>
               <button type="button">Agendar</button>
             </span>
@@ -164,11 +164,11 @@ const Consultoria: React.FC = () => {
 
           <div className="card">
             <span>
-              <div className="categoria">Gestão Financeira</div>
+              <h1>Gestão Financeira</h1>
               <div className="pic">
                 <img src={recImg2} alt=""/>
               </div>
-              <div className="nome"></div>
+              <div className="nome">Fátima Pires</div>
               <div className="cargo">CEO na xxx</div>
               <button type="button">Agendar</button>
             </span>
@@ -176,11 +176,11 @@ const Consultoria: React.FC = () => {
 
           <div className="card">
             <span>
-              <div className="categoria">Atração de Clientes</div>
+              <h1>Atração de Clientes</h1>
               <div className="pic">
                 <img src={recImg3} alt=""/>
               </div>
-              <div className="nome"></div>
+              <div className="nome">Leandro Brouner</div>
               <div className="cargo">CEO na xxx</div>
               <button type="button">Agendar</button>
             </span>
@@ -188,11 +188,11 @@ const Consultoria: React.FC = () => {
 
           <div className="card">
             <span>
-              <div className="categoria">Linhas de Crédito</div>
+              <h1>Linhas de Crédito</h1>
               <div className="pic">
                 <img src={recImg4} alt=""/>
               </div>
-              <div className="nome"></div>
+              <div className="nome">Amanda Miranda</div>
               <div className="cargo">CEO na xxx</div>
               <button type="button">Agendar</button>
             </span>
