@@ -42,9 +42,13 @@ const Menu: React.FC<MenuProps> = ({ menu1, menu2, menu3 }) => {
         <li><img src={iconEstoque} alt="Estoque"/> Estoque</li>
         <li><img src={iconFornecedores} alt="Fornecedores"/> Fornecedores</li>
         <li><img src={iconRelatorio} alt="Relatório"/> Relatório</li>
-        <li className={menu2}><img src={iconConsultoria} alt="Consultoria"/> Consultoria</li>
+        <li className={menu2}>
+          <Link to="/consultoria">
+            <img src={iconConsultoria} alt="Consultoria"/> Consultoria
+          </Link>
+        </li>
         <li className={menu3}>
-          <Link to="trilha-de-conhecimento" >
+          <Link to="/trilha-de-conhecimento" >
             <img src={iconTrilha} alt="Trilhas"/> Trilhas
           </Link>
         </li>
