@@ -12,11 +12,12 @@ export const Container = styled.div`
 `
 export const Menu = styled.div`
   overflow: auto;
-  position: absolute;
-  width: 255px;
-  height: 100%;
-  left: 0px;
-  top: 0px;
+  /* position: absolute; */
+  max-width: 255px;
+  height: 100vh;
+  width: 100%;
+  /* left: 0px; */
+  /* top: 0px; */
 
   background: #FE0000;
   div {
@@ -69,6 +70,10 @@ export const Menu = styled.div`
   }
 
   @media (max-width:768px){
+    overflow: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     left: -300px;
   }
 `
