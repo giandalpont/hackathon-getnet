@@ -13,6 +13,7 @@ export const Container = styled.div`
   background: #FE0000;
 
   a {
+    width: 100%;
     text-decoration: none;
     color: #fff;
   }
@@ -52,6 +53,7 @@ export const Container = styled.div`
       }
 
       &.active {
+        border-left: 3px solid #FFFFFF;
         font-weight: 800;
         background: ${shade(0.2, '#FE0000')};
         img {
