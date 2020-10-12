@@ -3,43 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
 `
-export const Topo = styled.div`
-  display: flex;
-  justify-content: space-between;
-  color: #252733;
 
-  h1 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    cursor: pointer;
-
-    h2{
-      font-family: Mulish;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 20px;
-      text-align: right;
-      letter-spacing: 0.2px;
-      color: #252733;
-
-      margin-right: 25px;
-    }
-
-    img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
-  }
-`
 export const BoxTrilha = styled.div`
   background: #FFFFFF;
   border: 1px solid #DFE0EB;
