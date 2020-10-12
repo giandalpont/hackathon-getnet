@@ -30,21 +30,21 @@ const Trilha: React.FC = () => {
               <div className="cicle"></div>
               <span className="line"></span>
             </div>
-            <h3>Capital de giro</h3>
+            <h3 className="m-t-30">Capital de giro</h3>
           </div>
           <div className="box">
             <div>
               <div className="cicle"></div>
               <span className="line"></span>
             </div>
-            <h3>Fluxo de caixa</h3>
+            <h3 className="m-t-30">Fluxo de caixa</h3>
           </div>
           <div className="box">
             <div>
               <div className="cicle"></div>
               <span className="line"></span>
             </div>
-            <h3>Pró-labore</h3>
+            <h3 className="m-t-30">Pró-labore</h3>
           </div>
           <div className="pontos">
             50 pontos
@@ -68,21 +68,21 @@ const Trilha: React.FC = () => {
               <div className="cicle"></div>
               <span className="line"></span>
             </div>
-            <h3>Capital de giro</h3>
+            <h3 className="m-t-30">Capital de giro</h3>
           </div>
           <div className="box">
             <div>
               <div className="cicle"></div>
               <span className="line"></span>
             </div>
-            <h3>Fluxo de caixa</h3>
+            <h3 className="m-t-30">Fluxo de caixa</h3>
           </div>
           <div className="box">
             <div>
               <div className="cicle"></div>
               <span className="line"></span>
             </div>
-            <h3>Pró-labore</h3>
+            <h3 className="m-t-30">Pró-labore</h3>
           </div>
           <div className="pontos">
             50 pontos

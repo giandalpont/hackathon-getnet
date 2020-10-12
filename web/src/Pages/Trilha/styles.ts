@@ -59,28 +59,28 @@ export const BoxTrilha = styled.div`
   }
   .btn {
     cursor: pointer;
-      font-size: 16px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 0.4px;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.4px;
 
-      border: 1px solid #FE0000;
-      padding: 10px 20px;
-      width: 220px;
-      border-radius: 30px;
-      display: block;
-      margin: 0 auto;
-      margin-top: 20px;
-      color: #FE0000;
-      transition: 0.3s ease-in-out;
+    border: 1px solid #FE0000;
+    padding: 10px 20px;
+    width: 220px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #FE0000;
+    transition: 0.3s ease-in-out;
 
-      &:hover {
-        background: #FED8D8;
-        border-color: #FED8D8;
-      }
+    &:hover {
+      background: #FED8D8;
+      border-color: #FED8D8;
     }
+  }
 
   > div {
     display: flex;
@@ -134,6 +134,9 @@ export const BoxTrilha = styled.div`
         height: 50px;
         border-radius: 50%;
         margin-top: 17px;
+      }
+      .m-t-30 {
+        margin-top: 33px;
       }
       h3 {
         margin-top: 20px;
