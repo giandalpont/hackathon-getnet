@@ -1,16 +1,10 @@
 import knex from 'knex';
-
-import conDB from '../config/main-db';
-
-const { host, user, password, database } = conDB;
+import path from 'path';
 
 const db = knex({
-  client: 'mysql',
+  client: 'sqlite3',
   connection: {
-    host,
-    user,
-    password,
-    database,
+    filename: path.resolve(__dirname, 'database.sqlite'),
   },
   useNullAsDefault: true,
 });
