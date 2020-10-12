@@ -7,10 +7,20 @@ export const TopMenu = styled.div`
 
   height: 3rem;
   margin-bottom: 2rem;
-  /* outline: 1px solid; */
+  
   
 
   color: #252733;
+
+  .title {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .items {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
 `;
 
 export const Container = styled.div`
@@ -85,6 +95,10 @@ export const Chart = styled.div`
   .chart {
     flex: 2.5;
     padding: 1rem;
+
+    img {
+      width: 80%;
+    }
   }
 
   .data {
