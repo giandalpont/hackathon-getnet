@@ -1,5 +1,6 @@
 import React from 'react';
+import Dashboard from './Pages/Dashboard';
 
 export const App = () => (
-  <h1>Git explorer</h1>
-)
+  <Dashboard />
+ )
