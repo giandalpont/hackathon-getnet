@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  min-width: calc(100vw - 255px);
-  max-height: 100vh;
-  padding: 1rem 2rem;
-  overflow-y: hidden;
+  /* min-width: calc(100vw - 255px); */
+  width: 100%;
+  /* padding: 1rem 2rem; */
+  /* overflow-y: hidden; */
 
   h1 {
       color: #252733;
@@ -51,7 +51,7 @@ export const Cards = styled.div`
     justify-content: center;
 
     text-align: center;
-    
+
   }
 `;
 
@@ -96,7 +96,7 @@ export const Chart = styled.div`
     .item {
       border-left: 1px solid #DFE0EB;
       border-bottom: 1px solid #DFE0EB;
-      padding: .8rem;  
+      padding: .8rem;
       text-align: center
     }
   }

@@ -25,38 +25,40 @@ const Menu: React.FC<MenuProps> = ({ menu1, menu2, menu3 }) => {
 
   return (
     <Container>
-      <Menumobile isMobile={menuMob} onClick={() => setMenuMob(!!true)}>
-        <img src={logoGetnet} alt="GetNet"/>
-      </Menumobile>
-      <div>
-        <img src={logoGetnet} alt="GetNet"/>
-      </div>
+      <section>
+        <Menumobile isMobile={menuMob} onClick={() => setMenuMob(!!true)}>
+          <img src={logoGetnet} alt="GetNet"/>
+        </Menumobile>
+        <div>
+          <img src={logoGetnet} alt="GetNet"/>
+        </div>
 
-      <ul >
-        <li className={menu1}>
-          <Link to="/">
-            <img src={iconPizza} alt="Visão Geral"/> Visão Geral
-          </Link>
-        </li>
-        <li><img src={iconFinanceiro} alt="Financeiro"/> Financeiro</li>
-        <li><img src={iconEstoque} alt="Estoque"/> Estoque</li>
-        <li><img src={iconFornecedores} alt="Fornecedores"/> Fornecedores</li>
-        <li><img src={iconRelatorio} alt="Relatório"/> Relatório</li>
-        <li className={menu2}>
-          <Link to="/consultoria">
-            <img src={iconConsultoria} alt="Consultoria"/> Consultoria
-          </Link>
-        </li>
-        <li className={menu3}>
-          <Link to="/trilha-de-conhecimento" >
-            <img src={iconTrilha} alt="Trilhas"/> Trilhas
-          </Link>
-        </li>
-        <hr/>
-        <li><img src={iconConfiguracao} alt="Configuração"/> Configuração</li>
-        <li><img src={iconServicos} alt="Serviços"/> Serviços</li>
+        <ul >
+          <li className={menu1}>
+            <Link to="/">
+              <img src={iconPizza} alt="Visão Geral"/> Visão Geral
+            </Link>
+          </li>
+          <li><img src={iconFinanceiro} alt="Financeiro"/> Financeiro</li>
+          <li><img src={iconEstoque} alt="Estoque"/> Estoque</li>
+          <li><img src={iconFornecedores} alt="Fornecedores"/> Fornecedores</li>
+          <li><img src={iconRelatorio} alt="Relatório"/> Relatório</li>
+          <li className={menu2}>
+            <Link to="/consultoria">
+              <img src={iconConsultoria} alt="Consultoria"/> Consultoria
+            </Link>
+          </li>
+          <li className={menu3}>
+            <Link to="/trilha-de-conhecimento" >
+              <img src={iconTrilha} alt="Trilhas"/> Trilhas
+            </Link>
+          </li>
+          <hr/>
+          <li><img src={iconConfiguracao} alt="Configuração"/> Configuração</li>
+          <li><img src={iconServicos} alt="Serviços"/> Serviços</li>
 
-      </ul>
+        </ul>
+      </section>
     </Container>
   )
 }

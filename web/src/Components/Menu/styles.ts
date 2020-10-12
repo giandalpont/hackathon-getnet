@@ -6,65 +6,75 @@ interface MenuProps {
 }
 
 export const Container = styled.div`
+
   overflow: auto;
   max-width: 255px;
   height: 100vh;
   width: 100%;
   background: #FE0000;
 
-  a {
+  section {
+    overflow: auto;
+    max-width: 255px;
+    height: 100vh;
     width: 100%;
-    text-decoration: none;
-    color: #fff;
-  }
+    background: #FE0000;
+    position: fixed;
+    a {
+      width: 100%;
+      text-decoration: none;
+      color: #fff;
+    }
 
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 33px;
-    margin-bottom: 50px;
-  }
-
-  hr {
-    opacity: 0.5;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    li {
-      color: #f5f6fa;
-      cursor: pointer;
+    div {
       display: flex;
-      font-size: 16px;
+      justify-content: center;
       align-items: center;
-      height: 55px;
-      list-style-type: none;
-      transition: 0.3 ease-in-out;
+      margin-top: 33px;
+      margin-bottom: 50px;
+    }
 
-      img {
-        width: 16px;
-        margin-right: 24px;
-        margin-left: 23px;
-      }
+    hr {
+      opacity: 0.5;
+      color: rgba(255, 255, 255, 0.8);
+    }
 
-      &.active {
-        border-left: 3px solid #FFFFFF;
-        font-weight: 800;
-        background: ${shade(0.2, '#FE0000')};
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      li {
+        color: #f5f6fa;
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        height: 55px;
+        list-style-type: none;
+        transition: 0.3 ease-in-out;
+
         img {
-          width: 18px;
+          width: 16px;
+          margin-right: 24px;
+          margin-left: 23px;
+        }
+
+        &.active {
+          border-left: 3px solid #FFFFFF;
+          font-weight: 800;
+          background: ${shade(0.2, '#FE0000')};
+          img {
+            width: 18px;
+          }
+        }
+
+        &:hover {
+          background: ${shade(0.2, '#FE0000')};
         }
       }
-
-      &:hover {
-        background: ${shade(0.2, '#FE0000')};
-      }
     }
+
   }
 
   @media (max-width:768px){
