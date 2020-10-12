@@ -1,7 +1,8 @@
 const conDB = {
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
+  // host: 'mysql6.000webhost.com',
+  host: '35.225.211.84',
+  user: 'getnet-api',
+  password: 'getnet-api',
   database: 'getnet',
 };
 
