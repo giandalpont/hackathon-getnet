@@ -12,12 +12,9 @@ export const Container = styled.div`
 `
 export const Menu = styled.div`
   overflow: auto;
-  /* position: absolute; */
   max-width: 255px;
   height: 100vh;
   width: 100%;
-  /* left: 0px; */
-  /* top: 0px; */
 
   background: #FE0000;
   div {
@@ -89,5 +86,6 @@ export const Menumobile = styled.span<MenuProps>`
 
 `
 export const Content = styled.div`
-
+  width: 100%;
+  padding: 35px 30px;
 `

@@ -84,7 +84,7 @@ const Overview: React.FC = () => {
 					</div>
 				</div>
 			</Chart>
-			
+
 		</Container>
   );
 }
