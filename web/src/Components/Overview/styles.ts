@@ -1,28 +1,5 @@
 import styled from 'styled-components';
 
-export const TopMenu = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 3rem;
-  margin-bottom: 2rem;
-  
-  
-
-  color: #252733;
-
-  .title {
-    font-size: 1.4rem;
-    font-weight: 700;
-  }
-  .items {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-`;
-
 export const Container = styled.div`
   min-width: calc(100vw - 255px);
   max-height: 100vh;

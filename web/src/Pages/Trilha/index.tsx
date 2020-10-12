@@ -4,17 +4,12 @@ import { Container, Topo, BoxTrilha } from './styles';
 import imgMaria from '../../assets/maria-dasilva.png'
 import iconInvestimento from '../../assets/icons/investimento.svg'
 import iconTrilhaeee from '../../assets/icons/trilha-nocao-financeira.svg'
+import TopMenu from '../../Components/TopMenu';
 
 const Trilha: React.FC = () => {
   return (
     <Container>
-      <Topo>
-        <h1>Trilhas de Conhecimento</h1>
-        <div>
-          <h2>Maria Silva</h2>
-          <img src={imgMaria} alt="Maria da Silva"/>
-        </div>
-      </Topo>
+      <TopMenu title="Trilhas de conhecimento"/>
       <BoxTrilha>
         <h2>Noção de Educação Financeira</h2>
         <div>
