@@ -1,16 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Menu from '../../Components/Menu';
 import TopMenu from '../../Components/TopMenu';
-import { Container, Content } from '../Dashboard/styles';
 import { Text, Volta } from './styles';
 
 
 const Trilha: React.FC = () => {
   return (
-    <Container>
-      <Menu menu3="active" />
-      <Content>
+    <>
         <TopMenu title="Trilhas de conhecimento"/>
         <Text>
           <h2>Capital de giro</h2>
@@ -40,8 +36,7 @@ const Trilha: React.FC = () => {
             </Link>
           </div>
         </Volta>
-      </Content>
-    </Container>
+      </>
   );
 }
 
