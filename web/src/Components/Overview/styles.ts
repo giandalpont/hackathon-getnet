@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* min-width: calc(100vw - 255px); */
   width: 100%;
-  /* padding: 1rem 2rem; */
-  /* overflow-y: hidden; */
 
   h1 {
       color: #252733;
@@ -59,7 +56,7 @@ export const Chart = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-
+  height: 50%;
   border: 1px solid #DFE0EB;
   border-radius: 10px;
   background-color: #fff;
@@ -75,25 +72,27 @@ export const Chart = styled.div`
 
     img {
       width: 100%;
-      height: 75%;
     }
   }
 
   .data {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 
     h1 {
-    font-size: 1.4em;
-    margin: .3rem;
-    font-weight: 700;
-  }
+      font-size: 1.4em;
+      margin: .3rem;
+      font-weight: 700;
+    }
 
-  h3 {
-    font-size: 1rem;
-    font-weight: 600;
-  }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
 
     .item {
+      flex: 1;
       border-left: 1px solid #DFE0EB;
       border-bottom: 1px solid #DFE0EB;
       padding: .8rem;
