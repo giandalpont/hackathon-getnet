@@ -17,7 +17,7 @@ import iconTrilha from '../../assets/icons/trilha.svg'
 
 const Menu: React.FC = () => {
   const [menuMob, setMenuMob] = useState(false);
-  const [currentPage, setCurrentPage] = useState<string>('/');
+  const [currentPage, setCurrentPage] = useState<string>(window.location.pathname);
 
   const handleClick = () => {
     setCurrentPage(window.location.pathname)
