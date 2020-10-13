@@ -18,24 +18,24 @@ export const Container = styled.div`
 
 export const Cards = styled.div`
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
 
   h1 {
-    font-size: 2rem;
+    font-size: 2em;
     margin: .3rem;
     font-weight: 700;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1em;
     font-weight: 700;
   }
 
   .card {
-    flex: 1;
+    flex: .1 1 180px;
 
     background-color: #fff;
     border: 1px solid #DFE0EB;
@@ -54,6 +54,7 @@ export const Cards = styled.div`
 
 export const Chart = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 1rem;
   height: 50%;
@@ -67,6 +68,7 @@ export const Chart = styled.div`
   }
 
   .chart {
+    min-width: 470px; 
     flex: 2.5;
     padding: 1rem;
 

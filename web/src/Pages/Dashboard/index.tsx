@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { Container, Content } from './styles'
 
 import Menu from '../../Components/Menu';
 
-import Overview from '../../Components/Overview'
+import Overview from '../Overview'
 
 const Dashboard: React.FC = () => {
   return (
