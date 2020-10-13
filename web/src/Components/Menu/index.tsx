@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import clsx from 'clsx';
 
 import { Container, Menumobile } from './styles';
 
@@ -14,14 +15,13 @@ import iconConfiguracao from '../../assets/icons/configuracao.svg'
 import iconServicos from '../../assets/icons/servicos.svg'
 import iconTrilha from '../../assets/icons/trilha.svg'
 
-interface MenuProps {
-  menu1?: string
-  menu2?: string
-  menu3?: string
-}
-
-const Menu: React.FC<MenuProps> = ({ menu1, menu2, menu3 }) => {
+const Menu: React.FC = () => {
   const [menuMob, setMenuMob] = useState(false);
+  const [currentPage, setCurrentPage] = useState<string>(window.location.pathname);
+
+  const handleClick = () => {
+    setCurrentPage(window.location.pathname)
+  }
 
   return (
     <Container>
@@ -34,7 +34,10 @@ const Menu: React.FC<MenuProps> = ({ menu1, menu2, menu3 }) => {
         </div>
 
         <ul >
-          <li className={menu1}>
+          <li 
+            className={clsx({"active": currentPage === "/"})} 
+            onClick={handleClick}
+          >
             <Link to="/">
               <img src={iconPizza} alt="Visão Geral"/> Visão Geral
             </Link>
@@ -43,12 +46,18 @@ const Menu: React.FC<MenuProps> = ({ menu1, menu2, menu3 }) => {
           <li><img src={iconEstoque} alt="Estoque"/> Estoque</li>
           <li><img src={iconFornecedores} alt="Fornecedores"/> Fornecedores</li>
           <li><img src={iconRelatorio} alt="Relatório"/> Relatório</li>
-          <li className={menu2}>
+          <li 
+            className={clsx({"active": currentPage === "/consultoria"})}
+            onClick={handleClick}
+          >
             <Link to="/consultoria">
               <img src={iconConsultoria} alt="Consultoria"/> Consultoria
             </Link>
           </li>
-          <li className={menu3}>
+          <li 
+            className={clsx({"active": currentPage === "/trilha-de-conhecimento"})}
+            onClick={handleClick}
+          >
             <Link to="/trilha-de-conhecimento" >
               <img src={iconTrilha} alt="Trilhas"/> Trilhas
             </Link>
