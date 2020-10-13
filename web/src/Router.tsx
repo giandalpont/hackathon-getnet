@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Switch, Route} from 'react-router-dom';
 
 
@@ -15,6 +15,10 @@ import TrilhaOrganizeFuturo from './Pages/Trilha/OrganizeFuturo';
 import Overview from './Pages/Overview';
 
 const Router: React.FC = () => {
+
+  useEffect(()=> {
+    console.log(window.location.pathname)
+  },[])
   return (
       <Switch>
         <Route path="/" exact component={Overview} />

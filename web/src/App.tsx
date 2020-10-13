@@ -9,7 +9,7 @@ import Router from './Router';
 export const App: React.FC = () => {
   return (
     <Container>
-      <Menu menu1="active" />
+      <Menu />
       <Content>
         <Router />
       </Content>
